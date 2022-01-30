@@ -4,10 +4,12 @@ import sqlite3
 
 bzzy = Flask(__name__)
 
+FN_DATABASE = 'bzzydata.db'
+FN_JSONDATA = 'dev-data/data.json'
 
 @bzzy.route('/data',methods=['POST'])
 def recvdata(): 
-        with sqlite3.connect('bzzydata.db') as con:
+        with sqlite3.connect(FN_DATABASE) as con:
             cur = con.cursor()
 
             # DO SHIT
