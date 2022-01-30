@@ -1,0 +1,22 @@
+{
+  "name": "bzzy",
+  "version": "1.0.0",
+  "description": "Using a nodeMCU it is possible to see how many phones are nearby and therefore roughly how many people are located in the area.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./bzzy_frontend/index.js -w ./bzzy_frontend/dev-data"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiorShrago/bzzy.git"
+  },
+  "author": "Evan, Tristan, Lior, Mike",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "2.0.15"
+  },
+  "bugs": {
+    "url": "https://github.com/LiorShrago/bzzy/issues"
+  },
+  "homepage": "https://github.com/LiorShrago/bzzy#readme"
+}

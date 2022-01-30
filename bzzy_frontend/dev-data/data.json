@@ -1,1 +1,57 @@
-[{"id": 0, "productName": "Qhacks Room", "image": "\ud83d\udcbb", "address": "479 Princess St, Kingston", "saftey": "High Risk", "quantity": 15, "ratio": "99", "lowPopulation": false, "description": "Appartment building on princess street where our hackers are getting it done \ud83d\ude24"}, {"id": 1, "productName": "Joseph S. Stauffer Library", "image": "\ud83d\udcd6", "address": "101 Union St, Kingston", "saftey": "Medium Risk", "quantity": "251", "ratio": "75", "lowPopulation": false, "description": "Stauffer library is a popular place to study on Queen\u2019s campus. Its public study spaces are first come first serve, so check Bzzy before coming to see if there will be tables available."}, {"id": 2, "productName": "ARC", "image": "\ud83c\udfcb\ufe0f", "address": "284 Earl St, Kingston", "saftey": "Low Risk", "quantity": "127", "ratio": "15", "lowPopulation": true, "description": "The ARC is a great place to exercise and play sports. At peak times the gym can be very crowded and certain equipment is in high demand. Check Bzzy to plan when to work out!"}, {"id": 3, "productName": "The Tea Room", "image": "\ud83c\udf75", "address": "45 Union St, Kingston", "saftey": "Low Risk", "quantity": "10", "ratio": "42", "lowPopulation": true, "description": "The Team Room is located in the ILC and is a great place to get tea, coffee, or food. Check Bzzy to see if you have time to grab a snack in between classes."}, {"id": 4, "productName": "Common Grounds Coffeehouse", "image": "\u2615", "address": "284 Earl St, Kingston", "saftey": "Low Risk", "quantity": "20 ", "ratio": "17", "lowPopulation": true, "description": "Cogro is on the top floor of the ARC and is a nice place to get a snack while studying. Check Bzzy to see whether it is currently busy!"}]
+[
+  {
+    "id": 0,
+    "productName": "Qhacks Room",
+    "image": "\ud83d\udcbb",
+    "address": "479 Princess St, Kingston",
+    "saftey": "High Risk",
+    "quantity": 15,
+    "ratio": "99",
+    "lowPopulation": false,
+    "description": "Appartment building on princess street where our hackers are getting it done \ud83d\ude24"
+  },
+  {
+    "id": 1,
+    "productName": "Joseph S. Stauffer Library",
+    "image": "\ud83d\udcd6",
+    "address": "101 Union St, Kingston",
+    "saftey": "Medium Risk",
+    "quantity": "251",
+    "ratio": "75",
+    "lowPopulation": false,
+    "description": "Stauffer library is a popular place to study on Queen\u2019s campus. Its public study spaces are first come first serve, so check Bzzy before coming to see if there will be tables available."
+  },
+  {
+    "id": 2,
+    "productName": "ARC",
+    "image": "\ud83c\udfcb\ufe0f",
+    "address": "284 Earl St, Kingston",
+    "saftey": "Low Risk",
+    "quantity": "127",
+    "ratio": "15",
+    "lowPopulation": true,
+    "description": "The ARC is a great place to exercise and play sports. At peak times the gym can be very crowded and certain equipment is in high demand. Check Bzzy to plan when to work out!"
+  },
+  {
+    "id": 3,
+    "productName": "The Tea Room",
+    "image": "\ud83c\udf75",
+    "address": "45 Union St, Kingston",
+    "saftey": "Low Risk",
+    "quantity": "10",
+    "ratio": "42",
+    "lowPopulation": true,
+    "description": "The Team Room is located in the ILC and is a great place to get tea, coffee, or food. Check Bzzy to see if you have time to grab a snack in between classes."
+  },
+  {
+    "id": 4,
+    "productName": "Common Grounds Coffeehouse",
+    "image": "\u2615",
+    "address": "284 Earl St, Kingston",
+    "saftey": "Low Risk",
+    "quantity": "20 ",
+    "ratio": "17",
+    "lowPopulation": true,
+    "description": "Cogro is on the top floor of the ARC and is a nice place to get a snack while studying. Check Bzzy to see whether it is currently busy!"
+  }
+]
