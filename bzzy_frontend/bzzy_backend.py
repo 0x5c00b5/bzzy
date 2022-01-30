@@ -16,14 +16,17 @@ def recvdata():
             # DO SHIT
             cur_datetime = datetime.datetime.now()
             node_id = int(request.form["id"])
-            clients = int(request.form["clients"])
+            clients = int(request.form["clients"])//2
             date = str(cur_datetime.year)+'-'+str(cur_datetime.month)+'-'+str(cur_datetime.day)
             time = str(cur_datetime.hour)+':'+str(cur_datetime.minute)+':'+str(cur_datetime.second)
-            sql_data = request.form["id"]+",'"+date+"','"+time+"',"+request.form["clients"]
+            sql_data = request.form["id"]+",'"+date+"','"+time+"',"+str(clients)
             cur.execute('INSERT INTO data VALUES ('+sql_data+')')
 
             con.commit()
-        update_JSON(node_id, clients, '99', False)
+        max_apt_occupancy = 25
+        percent = (clients/max_apt_occupancy)*100
+        lowPop = True if percent > 75 else False
+        update_JSON(node_id, clients, str(percent), lowPop)
         return ('', 204)
 
 def update_JSON(node_id, quantity, ratio, lowPop):
