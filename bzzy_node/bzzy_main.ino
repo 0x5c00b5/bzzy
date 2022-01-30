@@ -6,7 +6,7 @@
 #define enable  1
 unsigned int channel = 1;
 unsigned long lastmillis;
-unsigned long PromTimeout = 900000; // milliseconds 900,000=15 mins
+unsigned long PromTimeout = 60000;//900000; // milliseconds 900,000=15 mins
 
 void blink(int amount, int speed){
   for(int x=0;x<amount;x++){
@@ -48,7 +48,7 @@ void postData(const char* ssid, const char* password){
 
   WiFiClient client;
   HTTPClient http;
-  if (!http.begin(client, "http://192.168.2.29:5000/data")){
+  if (!http.begin(client, "http://192.168.5.15:8080/data")){
     blink(3,500);
     delay(5000);
     return;
@@ -81,6 +81,6 @@ void setup() {
 
 void loop() {
   runPromiscuous();
-  // postData("BELL297","D369D7AEC1EE");
+  postData("BELL256-V","rapswin2022");
   //  delay(5000);
 }
