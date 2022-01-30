@@ -32,7 +32,7 @@ void runPromiscuous(){
     channel++;
     if (channel == 17){channel=1;}             // Only scan channels 1 to 16
     wifi_set_channel(channel);
-    printTop15(client_list);
+    // printTop15(client_list);
     Serial.printf("Clients: %d\n",client_count);
     Serial.printf("Average: %d\n",getAverage());
     delay(500);  // critical processing timeslice & time to probe each channel
@@ -48,7 +48,7 @@ void postData(const char* ssid, const char* password){
 
   WiFiClient client;
   HTTPClient http;
-  if (!http.begin(client, "http://192.168.5.15:8080/data")){
+  if (!http.begin(client, "http://34.72.2.20:6969/data")){
     blink(3,500);
     delay(5000);
     return;
@@ -57,7 +57,7 @@ void postData(const char* ssid, const char* password){
   blink(1,250);
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");
   char buff[18];
-  sprintf(buff,"clients=%3d&id=000",getAverage());
+  sprintf(buff,"clients=%3d&id=0",getAverage());
   http.POST(buff);
   http.writeToStream(&Serial);
 
