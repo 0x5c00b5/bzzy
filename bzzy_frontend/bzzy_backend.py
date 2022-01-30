@@ -25,7 +25,7 @@ def recvdata():
             con.commit()
         max_apt_occupancy = 25
         percent = round((clients/max_apt_occupancy)*100)
-        lowPop = True if percent > 75 else False
+        lowPop = True if percent < 50 else False
         update_JSON(node_id, clients, str(percent), lowPop)
         return ('', 204)
 

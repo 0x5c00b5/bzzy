@@ -6,7 +6,7 @@
 #define enable  1
 unsigned int channel = 1;
 unsigned long lastmillis;
-unsigned long PromTimeout = 60000;//900000; // milliseconds 900,000=15 mins
+unsigned long PromTimeout = 150000;//900000; // milliseconds 900,000=15 mins
 
 void blink(int amount, int speed){
   for(int x=0;x<amount;x++){
